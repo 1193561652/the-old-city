@@ -1,0 +1,209 @@
+{
+  "limitations": "No combat, deaths, repairs, retirement, blocked paths or capacity delays. Completed troops assumed promptly deployed; reserve is held, not spent. Trained totals are NOT surviving troops or victory predictions.",
+  "scenarios": {
+    "balanced": {
+      "snapshots": [
+        {
+          "seconds": 180,
+          "soldiers_trained": 40,
+          "trainees": 2,
+          "funds": 1293.75,
+          "tax_per_minute": 239.75
+        },
+        {
+          "seconds": 420,
+          "soldiers_trained": 182,
+          "trainees": 2,
+          "funds": 429.11,
+          "tax_per_minute": 238.9
+        },
+        {
+          "seconds": 600,
+          "soldiers_trained": 254,
+          "trainees": 2,
+          "funds": 425.16,
+          "tax_per_minute": 238.46
+        },
+        {
+          "seconds": 780,
+          "soldiers_trained": 326,
+          "trainees": 2,
+          "funds": 419.91,
+          "tax_per_minute": 238.03
+        },
+        {
+          "seconds": 900,
+          "soldiers_trained": 373,
+          "trainees": 0,
+          "funds": 445.71,
+          "tax_per_minute": 237.76
+        }
+      ],
+      "total_tax": 3575.71,
+      "total_spent": 5530.0,
+      "minimum_funds": 400.1363,
+      "project_timings": [
+        {
+          "kind": "barracks",
+          "requested": 0,
+          "start": 0,
+          "complete": 60
+        },
+        {
+          "kind": "wall",
+          "requested": 0,
+          "start": 0,
+          "complete": 90
+        },
+        {
+          "kind": "wall",
+          "requested": 90,
+          "start": 90,
+          "complete": 180
+        },
+        {
+          "kind": "barracks",
+          "requested": 120,
+          "start": 120,
+          "complete": 180
+        },
+        {
+          "kind": "tower",
+          "requested": 240,
+          "start": 240,
+          "complete": 330
+        }
+      ]
+    },
+    "fortification_first": {
+      "snapshots": [
+        {
+          "seconds": 180,
+          "soldiers_trained": 40,
+          "trainees": 1,
+          "funds": 1303.15,
+          "tax_per_minute": 239.75
+        },
+        {
+          "seconds": 420,
+          "soldiers_trained": 160,
+          "trainees": 2,
+          "funds": 649.78,
+          "tax_per_minute": 239.03
+        },
+        {
+          "seconds": 600,
+          "soldiers_trained": 254,
+          "trainees": 2,
+          "funds": 425.92,
+          "tax_per_minute": 238.46
+        },
+        {
+          "seconds": 780,
+          "soldiers_trained": 326,
+          "trainees": 2,
+          "funds": 420.68,
+          "tax_per_minute": 238.03
+        },
+        {
+          "seconds": 900,
+          "soldiers_trained": 373,
+          "trainees": 0,
+          "funds": 446.47,
+          "tax_per_minute": 237.76
+        }
+      ],
+      "total_tax": 3576.47,
+      "total_spent": 5530.0,
+      "minimum_funds": 400.013,
+      "project_timings": [
+        {
+          "kind": "barracks",
+          "requested": 0,
+          "start": 0,
+          "complete": 60
+        },
+        {
+          "kind": "wall",
+          "requested": 0,
+          "start": 0,
+          "complete": 90
+        },
+        {
+          "kind": "wall",
+          "requested": 0,
+          "start": 0,
+          "complete": 90
+        },
+        {
+          "kind": "tower",
+          "requested": 90,
+          "start": 90,
+          "complete": 180
+        },
+        {
+          "kind": "barracks",
+          "requested": 240,
+          "start": 240,
+          "complete": 300
+        }
+      ]
+    },
+    "recruitment_first": {
+      "snapshots": [
+        {
+          "seconds": 180,
+          "soldiers_trained": 80,
+          "trainees": 2,
+          "funds": 1497.11,
+          "tax_per_minute": 239.51
+        },
+        {
+          "seconds": 420,
+          "soldiers_trained": 240,
+          "trainees": 2,
+          "funds": 853.24,
+          "tax_per_minute": 238.55
+        },
+        {
+          "seconds": 600,
+          "soldiers_trained": 354,
+          "trainees": 2,
+          "funds": 427.83,
+          "tax_per_minute": 237.86
+        },
+        {
+          "seconds": 780,
+          "soldiers_trained": 426,
+          "trainees": 2,
+          "funds": 420.79,
+          "tax_per_minute": 237.43
+        },
+        {
+          "seconds": 900,
+          "soldiers_trained": 473,
+          "trainees": 0,
+          "funds": 445.38,
+          "tax_per_minute": 237.16
+        }
+      ],
+      "total_tax": 3575.38,
+      "total_spent": 5530.0,
+      "minimum_funds": 400.3574,
+      "project_timings": [
+        {
+          "kind": "barracks",
+          "requested": 0,
+          "start": 0,
+          "complete": 60
+        },
+        {
+          "kind": "barracks",
+          "requested": 0,
+          "start": 0,
+          "complete": 60
+        }
+      ]
+    }
+  }
+}

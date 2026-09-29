@@ -1,0 +1,220 @@
+{
+  "version": "0.1",
+  "status": "paper_baseline_not_playtested",
+  "population": {
+    "initial_total": 40000,
+    "initial_levy_eligible": 4000,
+    "target_soldiers": 400,
+    "natural_growth": 0
+  },
+  "economy": {
+    "initial_funds": 2400,
+    "tax_per_civilian_per_second": 0.0001,
+    "tax_payout_seconds": 10,
+    "repair_reserve": 400,
+    "kill_reward": 0,
+    "recurring_soldier_upkeep": 0
+  },
+  "training": {
+    "cost_per_soldier": 10,
+    "seconds_per_soldier_per_barracks": 3,
+    "retirement_seconds": 0,
+    "retirement_refund": 0,
+    "idle_after_combat_seconds": 5,
+    "queue_presets": [
+      10,
+      50
+    ]
+  },
+  "construction": {
+    "barracks": {
+      "cost": 400,
+      "work_person_seconds": 12000,
+      "max_workers": 200,
+      "max_hp": 4000,
+      "garrison_capacity": 100,
+      "footprint_m": [
+        16,
+        16
+      ]
+    },
+    "wall": {
+      "cost": 300,
+      "work_person_seconds": 18000,
+      "max_workers": 200,
+      "max_hp": 6000,
+      "garrison_capacity": 40,
+      "footprint_m": [
+        20,
+        6
+      ]
+    },
+    "tower": {
+      "cost": 400,
+      "work_person_seconds": 18000,
+      "max_workers": 200,
+      "max_hp": 4000,
+      "garrison_capacity": 60,
+      "footprint_m": [
+        10,
+        10
+      ]
+    },
+    "initial_hp_fraction": 0.1,
+    "repair_cost_per_hp": 0.1,
+    "repair_hp_per_worker_second": 0.25,
+    "repair_max_workers": 100,
+    "repair_resume_delay_seconds": 10
+  },
+  "garrison": {
+    "ground_capacity": 50,
+    "ground_size_m": [
+      16,
+      16
+    ],
+    "ground_cost": 0,
+    "ground_engagement_radius_m": 10,
+    "wall_range_multiplier": 1.5,
+    "wall_ranged_damage_multiplier": 1.25,
+    "other_building_range_multiplier": 1,
+    "other_building_damage_multiplier": 1,
+    "collapse_damage": 30,
+    "slot_spacing_m": 2,
+    "deployment_presets": [
+      10,
+      50,
+      "all"
+    ]
+  },
+  "soldier": {
+    "hp": 100,
+    "speed_m_per_second": 3,
+    "ranged_damage": 8,
+    "ranged_cooldown_seconds": 3,
+    "ranged_range_m": 30,
+    "projectile_speed_m_per_second": 50,
+    "melee_damage": 10,
+    "melee_cooldown_seconds": 1.5,
+    "melee_enter_m": 1.8,
+    "melee_exit_m": 2.4,
+    "melee_reach_m": 2.4
+  },
+  "enemy": {
+    "types": 1,
+    "hp": 120,
+    "speed_m_per_second": 2.4,
+    "melee_damage": 12,
+    "melee_cooldown_seconds": 1.5,
+    "melee_reach_m": 2.4,
+    "ranged_enabled": false
+  },
+  "map": {
+    "size_m": [
+      240,
+      320
+    ],
+    "building_grid_m": 2,
+    "wall_segments": 6,
+    "initial_complete_segments": 4,
+    "initial_gap_segments": 2,
+    "tower_sites": 1,
+    "enemy_spawn_to_wall_m": 80,
+    "wall_to_cityheart_m": 120,
+    "cityheart_hp": 8000,
+    "cityheart_capacity": 60,
+    "cityheart_footprint_m": [
+      20,
+      20
+    ]
+  },
+  "waves": [
+    {
+      "time_seconds": 420,
+      "count": 120,
+      "lanes": 3,
+      "spawn_duration_seconds": 30
+    },
+    {
+      "time_seconds": 600,
+      "count": 240,
+      "lanes": 3,
+      "spawn_duration_seconds": 45
+    },
+    {
+      "time_seconds": 780,
+      "count": 420,
+      "lanes": 3,
+      "spawn_duration_seconds": 60
+    }
+  ],
+  "performance_targets": {
+    "normal_active_combatants": 900,
+    "stress_active_combatants": 1500,
+    "fps_target": 60
+  },
+  "projection_scenarios": {
+    "balanced": {
+      "reserve": 400,
+      "projects": [
+        [
+          0,
+          "barracks"
+        ],
+        [
+          0,
+          "wall"
+        ],
+        [
+          90,
+          "wall"
+        ],
+        [
+          120,
+          "barracks"
+        ],
+        [
+          240,
+          "tower"
+        ]
+      ]
+    },
+    "fortification_first": {
+      "reserve": 400,
+      "projects": [
+        [
+          0,
+          "barracks"
+        ],
+        [
+          0,
+          "wall"
+        ],
+        [
+          0,
+          "wall"
+        ],
+        [
+          90,
+          "tower"
+        ],
+        [
+          240,
+          "barracks"
+        ]
+      ]
+    },
+    "recruitment_first": {
+      "reserve": 400,
+      "projects": [
+        [
+          0,
+          "barracks"
+        ],
+        [
+          0,
+          "barracks"
+        ]
+      ]
+    }
+  }
+}
